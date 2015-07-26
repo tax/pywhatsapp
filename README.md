@@ -1,5 +1,5 @@
 # Example usage
-You can register a whatsapp client with the yowsup-cli ([see registration](https://github.com/tgalal/yowsup/wiki/yowsup-cli-2.0))
+You can register a whatsapp client with the [yowsup-cli](https://github.com/tgalal/yowsup/wiki/yowsup-cli-2.0#yowsup-cli-registration)
 
 ```python
 from whatsapp import Client
