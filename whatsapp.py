@@ -18,6 +18,7 @@ from yowsup.layers.protocol_media.protocolentities import (
     RequestUploadIqProtocolEntity
 )
 
+logging.basicConfig(level=logging.ERROR)
 logger = logging.getLogger(__name__)
 
 EXT_IMAGE = ['.jpg', '.png']

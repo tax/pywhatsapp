@@ -3,8 +3,6 @@ You can register a whatsapp client with the yowsup-cli ([see registration](https
 
 ```python
 from whatsapp import Client
-import logging
-logging.basicConfig(level=logging.ERROR)
 
 to = '31641371199'
 
