@@ -1,5 +1,7 @@
 .DS_Store
 env/
+dist/
+pywhatsapp.egg-info/
 send.py
 *.pyc
 *.*~
