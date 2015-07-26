@@ -4,11 +4,11 @@ You can register a whatsapp client with the yowsup-cli ([see registration](https
 ```python
 from whatsapp import Client
 
-to = '31641371199'
+phone_to = '31641371199'
 
 client = Client(login='3161516888', password='secretpasswordbase64')
-client.send_message(to, 'Hello lola')
-client.send_media(to, path='/Users/tax/Desktop/logo.jpg')
+client.send_message(phone_to, 'Hello Lola')
+client.send_media(phone_to, path='/Users/tax/Desktop/logo.jpg')
 ```
 
 # Installation
