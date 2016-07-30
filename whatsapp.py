@@ -80,9 +80,10 @@ class SendLayer(YowInterfaceLayer):
             logger.info("Message sent")
             raise KeyboardInterrupt()
 
-    def disconnect(self, result):
+    def disconnect(self, result=None):
         self.broadcastEvent(YowLayerEvent(YowNetworkLayer.EVENT_STATE_DISCONNECT))
-        raise ValueError(result)
+        if result:
+            raise ValueError(result)
 
     def on_request_upload_result(self, jid, file_path, result_entity, request_entity):
         if result_entity.isDuplicate():
