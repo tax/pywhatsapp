@@ -15,7 +15,7 @@ if sys.argv[-1] == 'publish':
 
 setup(
     name='pywhatsapp',
-    version='0.0.4',
+    version='0.0.5',
     author='Paul Tax',
     author_email='paultax@gmail.com',
     include_package_data=True,

@@ -139,7 +139,7 @@ class Client(object):
         self.stack.setProp(YowAuthenticationProtocolLayer.PROP_CREDENTIALS, (self.login, self.password))
         self.stack.setProp(YowNetworkLayer.PROP_ENDPOINT, YowConstants.ENDPOINTS[0])
         self.stack.setProp(YowCoderLayer.PROP_DOMAIN, YowConstants.DOMAIN)
-        self.stack.setProp(YowCoderLayer.PROP_RESOURCE, env.CURRENT_ENV.getResource())
+        self.stack.setProp(YowCoderLayer.PROP_RESOURCE, env.YowsupEnv.getCurrent().getResource())
 
         self.stack.setProp(SendLayer.PROP_MESSAGES, [([to, message, is_media])])
         self.stack.broadcastEvent(YowLayerEvent(YowNetworkLayer.EVENT_STATE_CONNECT))
